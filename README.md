@@ -25,9 +25,11 @@ Jalara is built around four principles:
 │   ├── brand-guidelines.md
 │   ├── colors.md
 │   └── typography.md
+├── favicon.svg
 ├── favicon-32x32.png
 ├── favicon-192x192.png
 ├── favicon-512x512.png
+├── site.webmanifest
 ├── favicon.ico
 ├── logo.png
 ├── logo.svg
@@ -45,10 +47,12 @@ Jalara is built around four principles:
 | `logo-dark.svg` | Logo variant for dark backgrounds. |
 | `logo-dark.png` | Transparent raster version of the dark-mode logo. |
 | `logo-square.png` | Square composition for profiles, social media, and promotional material. |
+| `favicon.svg` | Scalable browser favicon. Preferred by modern browsers. |
 | `favicon.ico` | Broadly compatible browser favicon. |
 | `favicon-32x32.png` | Standard small favicon. |
 | `favicon-192x192.png` | Web application and Android icon. |
 | `favicon-512x512.png` | High-resolution icon for PWAs and digital distribution. |
+| `site.webmanifest` | Web application identity and icon metadata. |
 
 ## Quick Usage
 
@@ -56,9 +60,10 @@ Jalara is built around four principles:
 
 ```html
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/logo.svg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" href="/favicon-192x192.png">
+<link rel="manifest" href="/site.webmanifest">
 ```
 
 ### Vue
@@ -88,6 +93,10 @@ Full documentation:
 - [`brand/colors.md`](brand/colors.md)
 - [`brand/typography.md`](brand/typography.md)
 - [`LICENSE.md`](LICENSE.md)
+
+## Brand Permission
+
+For trademark, partnership, commercial usage, or brand permission requests, contact the Jalara brand owner through [@tomylana93](https://github.com/tomylana93).
 
 ## License and Usage
 
