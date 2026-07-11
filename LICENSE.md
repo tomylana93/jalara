@@ -72,7 +72,7 @@ The Jalara brand owner may request that use be discontinued when it is misleadin
 
 ## 9. Permission Requests
 
-Requests for use not covered by this license must be submitted to the Jalara brand owner through an official contact channel listed in the repository or on the official Jalara website.
+Requests for use not covered by this license must be submitted to the Jalara brand owner through the official GitHub contact listed in the repository README or through another official Jalara communication channel.
 
 The absence of a response does not constitute permission.
 
