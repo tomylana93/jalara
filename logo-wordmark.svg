@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="136" height="142" viewBox="0 0 136 142" role="img" aria-label="Jalara symbol">
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="154" viewBox="0 0 605 154" role="img" aria-label="Jalara">
+<g transform="translate(0 8)">
 <defs>
   <linearGradient id="top" x1="55" y1="5" x2="123" y2="72" gradientUnits="userSpaceOnUse"><stop stop-color="#228DFF"/><stop offset="1" stop-color="#096CE6"/></linearGradient>
   <linearGradient id="left" x1="3" y1="77" x2="52" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#2B425E"/><stop offset="1" stop-color="#192A40"/></linearGradient>
@@ -14,5 +15,20 @@
   <path d="M57 91 L111 62 L123 49 V59 L57 125 Z" fill="#FFFFFF" fill-opacity=".30"/>
   <path d="M46 129 L114 60" fill="none" stroke="url(#stripe)" stroke-width="5"/>
   <path d="M62 130 L127 66" fill="none" stroke="#B8DEFF" stroke-opacity=".30" stroke-width="3"/>
+</g>
+</g>
+<g fill="#18283F">
+
+<circle cx="180" cy="24" r="11"/>
+<path d="M169 47 H191 V112 C191 137 176 144 155 144 H144 V124 H155 C165 124 169 119 169 110 Z"/>
+<path d="M243 47 A35 35 0 1 0 243 117 A35 35 0 1 0 243 47 Z M243 67 A15 15 0 1 1 243 97 A15 15 0 1 1 243 67 Z" fill-rule="evenodd"/>
+<path d="M265 48 H285 V115 H265 Z"/>
+<path d="M299 12 H321 V115 H299 Z"/>
+<path d="M369 47 A35 35 0 1 0 369 117 A35 35 0 1 0 369 47 Z M369 67 A15 15 0 1 1 369 97 A15 15 0 1 1 369 67 Z" fill-rule="evenodd"/>
+<path d="M391 48 H411 V115 H391 Z"/>
+<path d="M425 48 H446 V61 C453 51 464 47 480 47 H487 V70 H477 C453 70 446 82 446 104 V115 H425 Z"/>
+<path d="M535 47 A35 35 0 1 0 535 117 A35 35 0 1 0 535 47 Z M535 67 A15 15 0 1 1 535 97 A15 15 0 1 1 535 67 Z" fill-rule="evenodd"/>
+<path d="M557 48 H577 V115 H557 Z"/>
+
 </g>
 </svg>

@@ -1,107 +1,61 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./logo-wordmark-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./logo-wordmark.svg">
+    <img src="./logo-wordmark.svg" alt="Jalara" width="480">
+  </picture>
+</p>
+
 # Jalara Brand Assets
 
-This repository contains the official visual identity assets for **Jalara**, a modular application foundation designed to be flexible, modern, and organized.
+Official brand assets for **Jalara**, a modern, modular foundation for building simple, purposeful applications.
 
-> **Jalara — One foundation, many possibilities.**
+The artwork contains **no tagline or description**. Jalara has a rounded modular symbol and a custom lowercase geometric wordmark. The official SVGs are self-contained vectors, and the PNGs are generated from those exact masters.
 
-## Brand Philosophy
+## Four official logo variants
 
-The name **Jalara** represents interconnected parts working in harmony within a single system. This philosophy aligns with a modular monolith approach: each module has a clear responsibility while remaining part of one consistent application foundation.
+| Variant | SVG | PNG | Background |
+| --- | --- | --- | --- |
+| Symbol only · light | [`logo.svg`](logo.svg) | [`logo.png`](logo.png) | Light |
+| Symbol only · dark | [`logo-dark.svg`](logo-dark.svg) | [`logo-dark.png`](logo-dark.png) | Dark |
+| Symbol + wordmark · light | [`logo-wordmark.svg`](logo-wordmark.svg) | [`logo-wordmark.png`](logo-wordmark.png) | Light |
+| Symbol + wordmark · dark | [`logo-wordmark-dark.svg`](logo-wordmark-dark.svg) | [`logo-wordmark-dark.png`](logo-wordmark-dark.png) | Dark |
 
-Jalara is built around four principles:
+All four PNG logo assets have transparent backgrounds. Use the corresponding light/dark variant rather than CSS filters.
 
-- **Modular** — each capability can be developed as a focused and independent part of the system.
-- **Flexible** — the platform can adapt to different product and business requirements.
-- **Modern** — the technology and user experience are designed to remain relevant and efficient.
-- **Organized** — clear structure, consistency, and responsibility boundaries guide development.
+## Automatic dark and light support in GitHub README
 
-## Asset Structure
+The top-of-page logo uses an HTML `<picture>` element with `prefers-color-scheme`, so GitHub can select the matching SVG automatically based on the reader's theme settings. A regular `<img>` is provided as the fallback.
 
-```text
-.
-├── README.md
-├── LICENSE.md
-├── brand/
-│   ├── brand-guidelines.md
-│   ├── colors.md
-│   └── typography.md
-├── favicon.svg
-├── favicon-32x32.png
-├── favicon-192x192.png
-├── favicon-512x512.png
-├── site.webmanifest
-├── favicon.ico
-├── logo.png
-├── logo.svg
-├── logo-dark.png
-├── logo-dark.svg
-└── logo-square.png
+The SVG variants do **not** need to detect the theme internally; the appropriate asset is selected by the browser.
+
+## Favicons and application icons
+
+| Asset | Usage |
+| --- | --- |
+| [`favicon.svg`](favicon.svg) | Modern browser favicon |
+| [`favicon.ico`](favicon.ico) | Fallback 16/32/48 favicon |
+| [`favicon-32x32.png`](favicon-32x32.png) | 32px browser favicon |
+| [`favicon-192x192.png`](favicon-192x192.png) | PWA icon |
+| [`favicon-512x512.png`](favicon-512x512.png) | PWA high-resolution icon |
+| [`apple-touch-icon.png`](apple-touch-icon.png) | Apple home-screen icon |
+| [`logo-square.png`](logo-square.png) | Square brand avatar |
+| [`site.webmanifest`](site.webmanifest) | Web app manifest |
+
+## Reproducible exports
+
+All PNG, ICO, and Apple icon exports are generated from the four master SVG files, not separate recreated artwork:
+
+```bash
+python -m pip install -r scripts/requirements.txt
+python scripts/export-raster.py
 ```
 
-## Asset Index
+The repository workflow automatically regenerates and commits raster assets when a master SVG or the export script changes.
 
-| File | Intended use |
-|---|---|
-| `logo.svg` | Primary logo for light backgrounds. Preferred for websites and digital interfaces. |
-| `logo.png` | Transparent raster version of the primary logo. |
-| `logo-dark.svg` | Logo variant for dark backgrounds. |
-| `logo-dark.png` | Transparent raster version of the dark-mode logo. |
-| `logo-square.png` | Square composition for profiles, social media, and promotional material. |
-| `favicon.svg` | Scalable browser favicon. Preferred by modern browsers. |
-| `favicon.ico` | Broadly compatible browser favicon. |
-| `favicon-32x32.png` | Standard small favicon. |
-| `favicon-192x192.png` | Web application and Android icon. |
-| `favicon-512x512.png` | High-resolution icon for PWAs and digital distribution. |
-| `site.webmanifest` | Web application identity and icon metadata. |
+## Guidelines
 
-## Quick Usage
-
-### HTML
-
-```html
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="/favicon-192x192.png">
-<link rel="manifest" href="/site.webmanifest">
-```
-
-### Vue
-
-```vue
-<img
-    src="/brand/logo.svg"
-    alt="Jalara"
-    class="h-10 w-auto"
->
-```
-
-Use `logo-dark.svg` on dark surfaces. Do not invert the primary logo with CSS filters because the result will not match the official dark-mode variant.
-
-## Basic Rules
-
-- Prefer SVG for digital use.
-- Use the logo variant with the clearest contrast against its background.
-- Preserve the original aspect ratio and surrounding clear space.
-- Do not alter the logo's colors, shapes, gradients, proportions, or orientation.
-- Do not add shadows, outlines, glow, bevels, or textures.
-- Do not place the logo over visually busy or low-contrast backgrounds.
-
-Full documentation:
-
-- [`brand/brand-guidelines.md`](brand/brand-guidelines.md)
-- [`brand/colors.md`](brand/colors.md)
-- [`brand/typography.md`](brand/typography.md)
-- [`LICENSE.md`](LICENSE.md)
-
-## Brand Permission
-
-For trademark, partnership, commercial usage, or brand permission requests, contact the Jalara brand owner through [@tomylana93](https://github.com/tomylana93).
-
-## License and Usage
-
-All Jalara names, logos, icons, and visual identity elements remain the property of the brand owner. Use outside official Jalara projects requires written permission.
-
-Code examples in this repository may be used for Jalara asset integration.
-
-See [`LICENSE.md`](LICENSE.md) for the full terms.
+- [Logo usage](brand/brand-guidelines.md)
+- [Color system](brand/colors.md)
+- [Typography](brand/typography.md)
+- [Brand license](LICENSE.md)

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="136" height="142" viewBox="0 0 136 142" role="img" aria-label="Jalara symbol">
 <defs>
-  <linearGradient id="top" x1="55" y1="5" x2="123" y2="72" gradientUnits="userSpaceOnUse"><stop stop-color="#228DFF"/><stop offset="1" stop-color="#096CE6"/></linearGradient>
-  <linearGradient id="left" x1="3" y1="77" x2="52" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#2B425E"/><stop offset="1" stop-color="#192A40"/></linearGradient>
-  <linearGradient id="bottom" x1="65" y1="64" x2="122" y2="126" gradientUnits="userSpaceOnUse"><stop stop-color="#E1F2FF"/><stop offset="1" stop-color="#83B9F6"/></linearGradient>
+  <linearGradient id="top" x1="55" y1="5" x2="123" y2="72" gradientUnits="userSpaceOnUse"><stop stop-color="#298BFF"/><stop offset="1" stop-color="#1974ED"/></linearGradient>
+  <linearGradient id="left" x1="3" y1="77" x2="52" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#314762"/><stop offset="1" stop-color="#1F324B"/></linearGradient>
+  <linearGradient id="bottom" x1="65" y1="64" x2="122" y2="126" gradientUnits="userSpaceOnUse"><stop stop-color="#DBEDFF"/><stop offset="1" stop-color="#8BC5FF"/></linearGradient>
   <linearGradient id="stripe" x1="57" y1="70" x2="109" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".78"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".06"/></linearGradient>
   <clipPath id="lower-clip"><path d="M57 77 H93 L123 49 V96 C123 116.5 106.5 133 86 133 H57 Z"/></clipPath>
 </defs>
