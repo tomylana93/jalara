@@ -1,41 +1,36 @@
 # Jalara Brand Guidelines
 
-## Meaning
+## Design concept
 
-The Jalara symbol consists of **three simple, separate geometric modules** that share one visual structure. The straight alignment communicates a dependable foundation; the diagonal seam and rounded ends convey composability and adaptation. It is deliberately clear at 24–32px without ornament.
+Jalara is a modern, modular foundation for building simple, purposeful applications.
 
-Brand character: modern, purposeful, calm, modular, recognizable, and technically precise.
+Its signature icon combines three visually separated forms: a rounded blue upper module, a deep-navy quarter-circle base, and a softly illuminated light-blue lower-right module. Negative space and the white diagonal seam express distinct building blocks fitting together into one purposeful form.
 
-## Official variants
+The wordmark **jalara** is custom geometric vector lettering. Do not replace it with a normal HTML font; use the official file.
 
-- `logo.svg` — symbol-only, light surfaces.
-- `logo-dark.svg` — symbol-only, dark surfaces.
-- `logo-wordmark.svg` — symbol plus lowercase **jalara**, light surfaces.
-- `logo-wordmark-dark.svg` — symbol plus lowercase **jalara**, dark surfaces.
+## Four official variants
 
-The SVGs are canonical. PNG, favicon and PWA formats are exports from the same artwork, not separate compositions. Avoid using light-surface variants over dark backgrounds or applying CSS filters to simulate dark mode.
+| File | Correct surface |
+| --- | --- |
+| `logo.svg` | Symbol-only on a light background |
+| `logo-dark.svg` | Symbol-only on a dark background |
+| `logo-wordmark.svg` | Symbol and wordmark on a light background |
+| `logo-wordmark-dark.svg` | Symbol and wordmark on a dark background |
 
-## Sizing and clearance
+PNG exports follow exactly the same naming and visual geometry.
 
-- Symbol: minimum recommended **24×24px**, preferably **32×32px** in navigation.
-- Wordmark: use at least **120px wide** for full legibility.
-- Safe space: keep an unoccupied margin equal to **one eighth of the symbol's width** around the visible artwork.
-- Keep original proportions. Use `object-fit: contain` when sizing inside UI components.
-- Favor a solid high-contrast surface instead of cluttered photographs.
+## Usage
 
-## Correct use
+- Use symbol-only for favicon, sidebar, square avatar, and compact spaces.
+- Use the complete wordmark for README, websites and documentation.
+- Do not include any tagline or description inside logo artwork.
+- Keep sufficient clear space (approximately 12.5% of the icon width) and preserve aspect ratio.
+- Do not recolor modules, flatten gradients, distort, rotate, add shadows, or apply CSS filters to create dark mode.
+- For small symbols, use at least 24px, preferably 32px.
+- For the complete wordmark, use at least 160px wide.
 
-- Use icon-only for app headers, sidebar entries, favicons and square avatars.
-- Use icon + wordmark for Jalara-branded documentation, marketing, repository headers and presentations.
-- When an application uses its own name or uploaded brand image, do not combine its name with the Jalara wordmark.
-- A descendant application may replace the default brand entirely; the foundation's internal architecture is independent of branding.
+## Theme selection
 
-## Incorrect use
+For GitHub README use a `<picture>` with `(prefers-color-scheme: dark)` and `(prefers-color-scheme: light)` sources. In an application, switch between `logo-wordmark.svg` and `logo-wordmark-dark.svg` based on the UI theme. A site's CSS dark mode may differ from the OS preference.
 
-Do not stretch, rotate, crop, recolor, rearrange or merge modules; add a tagline inside the logo; add strokes, drop shadows, glow or 3D effects; use the wrong background variant; or place the wordmark inside a fixed square icon container.
-
-## Names and scope
-
-Write **Jalara** in prose and **jalara** inside the official lowercase wordmark. Treat module/product names as separate copy rather than modifications to the protected logo.
-
-The short product positioning statement is **“A modern, modular foundation for building simple, purposeful applications.”** This is editorial copy only and **must never be embedded in the four official logo assets**.
+See `README.md` for the working GitHub markup.

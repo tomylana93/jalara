@@ -1,13 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="382" height="128" viewBox="0 0 382 128" role="img" aria-label="Jalara">
-  <path d="M62 12H100C106.63 12 112 17.37 112 24V59L91 80H50V24C50 17.37 55.37 12 62 12Z" fill="#4B9DFF" />
-  <path d="M12 79H44V116H40C24.54 116 12 103.46 12 88V79Z" fill="#90ABC9" />
-  <path d="M50 90H90L112 68V83C112 101.23 97.23 116 79 116H50V90Z" fill="#B5DBFF" />
-  <g fill="#F6FAFF">
-    <path d="M97 1056V-29C97 -116 66 -151 -9 -151H-79V-418H56C312 -418 442 -294 442 -64V1056ZM269 1159C379 1159 458 1232 458 1333C458 1434 379 1506 269 1506C158 1506 79 1434 79 1333C79 1232 158 1159 269 1159Z" transform="translate(146.000 96) scale(0.04199219 -0.04199219)" />
-    <path d="M419 -18C568 -18 663 34 726 148H730V0H1066V711C1066 944 897 1079 590 1079C284 1079 111 943 96 714H416C423 786 482 832 578 832C669 832 725 789 725 726V721C725 658 656 643 467 627C242 609 57 532 57 295C57 85 208 -18 419 -18ZM524 207C440 207 383 246 383 311C383 380 449 418 541 432C626 446 691 459 728 476V380C728 276 639 207 524 207Z" transform="translate(167.092 96) scale(0.04199219 -0.04199219)" />
-    <path d="M440 1490H96V0H440Z" transform="translate(214.387 96) scale(0.04199219 -0.04199219)" />
-    <path d="M419 -18C568 -18 663 34 726 148H730V0H1066V711C1066 944 897 1079 590 1079C284 1079 111 943 96 714H416C423 786 482 832 578 832C669 832 725 789 725 726V721C725 658 656 643 467 627C242 609 57 532 57 295C57 85 208 -18 419 -18ZM524 207C440 207 383 246 383 311C383 380 449 418 541 432C626 446 691 459 728 476V380C728 276 639 207 524 207Z" transform="translate(235.395 96) scale(0.04199219 -0.04199219)" />
-    <path d="M96 0H440V541C440 691 525 777 648 777C698 777 759 775 784 774V1058C756 1059 727 1060 690 1060C549 1060 470 1004 432 870H429V1056H96Z" transform="translate(282.689 96) scale(0.04199219 -0.04199219)" />
-    <path d="M419 -18C568 -18 663 34 726 148H730V0H1066V711C1066 944 897 1079 590 1079C284 1079 111 943 96 714H416C423 786 482 832 578 832C669 832 725 789 725 726V721C725 658 656 643 467 627C242 609 57 532 57 295C57 85 208 -18 419 -18ZM524 207C440 207 383 246 383 311C383 380 449 418 541 432C626 446 691 459 728 476V380C728 276 639 207 524 207Z" transform="translate(315.035 96) scale(0.04199219 -0.04199219)" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="154" viewBox="0 0 605 154" role="img" aria-label="Jalara">
+<g transform="translate(0 8)">
+<defs>
+  <linearGradient id="top" x1="55" y1="5" x2="123" y2="72" gradientUnits="userSpaceOnUse"><stop stop-color="#298BFF"/><stop offset="1" stop-color="#1974ED"/></linearGradient>
+  <linearGradient id="left" x1="3" y1="77" x2="52" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#314762"/><stop offset="1" stop-color="#1F324B"/></linearGradient>
+  <linearGradient id="bottom" x1="65" y1="64" x2="122" y2="126" gradientUnits="userSpaceOnUse"><stop stop-color="#DBEDFF"/><stop offset="1" stop-color="#8BC5FF"/></linearGradient>
+  <linearGradient id="stripe" x1="57" y1="70" x2="109" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF" stop-opacity=".78"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".06"/></linearGradient>
+  <clipPath id="lower-clip"><path d="M57 77 H93 L123 49 V96 C123 116.5 106.5 133 86 133 H57 Z"/></clipPath>
+</defs>
+<path d="M69 5 H119 Q123 5 123 9 V41 Q123 47 118 52 L100 70 Q98 72 94 72 H55 V20 Q55 5 69 5 Z" fill="url(#top)"/>
+<path d="M55 65 L120 5 H123 V41 Q123 47 118 52 L100 70 Q98 72 94 72 H55 Z" fill="#055BD8" fill-opacity=".13"/>
+<path d="M3 77 H52 V133 H47 C22.7 133 3 113.3 3 89 Z" fill="url(#left)"/>
+<path d="M57 77 H93 L123 49 V96 C123 116.5 106.5 133 86 133 H57 Z" fill="url(#bottom)"/>
+<g clip-path="url(#lower-clip)">
+  <path d="M57 91 L111 62 L123 49 V59 L57 125 Z" fill="#FFFFFF" fill-opacity=".30"/>
+  <path d="M46 129 L114 60" fill="none" stroke="url(#stripe)" stroke-width="5"/>
+  <path d="M62 130 L127 66" fill="none" stroke="#B8DEFF" stroke-opacity=".30" stroke-width="3"/>
+</g>
+</g>
+<g fill="#F5F9FF">
+
+<circle cx="180" cy="24" r="11"/>
+<path d="M169 47 H191 V112 C191 137 176 144 155 144 H144 V124 H155 C165 124 169 119 169 110 Z"/>
+<path d="M243 47 A35 35 0 1 0 243 117 A35 35 0 1 0 243 47 Z M243 67 A15 15 0 1 1 243 97 A15 15 0 1 1 243 67 Z" fill-rule="evenodd"/>
+<path d="M265 48 H285 V115 H265 Z"/>
+<path d="M299 12 H321 V115 H299 Z"/>
+<path d="M369 47 A35 35 0 1 0 369 117 A35 35 0 1 0 369 47 Z M369 67 A15 15 0 1 1 369 97 A15 15 0 1 1 369 67 Z" fill-rule="evenodd"/>
+<path d="M391 48 H411 V115 H391 Z"/>
+<path d="M425 48 H446 V61 C453 51 464 47 480 47 H487 V70 H477 C453 70 446 82 446 104 V115 H425 Z"/>
+<path d="M535 47 A35 35 0 1 0 535 117 A35 35 0 1 0 535 47 Z M535 67 A15 15 0 1 1 535 97 A15 15 0 1 1 535 67 Z" fill-rule="evenodd"/>
+<path d="M557 48 H577 V115 H557 Z"/>
+
+</g>
 </svg>

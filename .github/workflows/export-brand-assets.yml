@@ -1,0 +1,38 @@
+name: Export Jalara brand assets
+
+on:
+  push:
+    branches:
+      - brand/modular-identity-v2
+      - main
+    paths:
+      - 'logo*.svg'
+      - 'favicon.svg'
+      - 'scripts/export-raster.py'
+      - 'scripts/requirements.txt'
+      - '.github/workflows/export-brand-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/requirements.txt
+      - run: python scripts/export-raster.py
+      - name: Commit generated assets
+        run: |
+          git add logo.png logo-dark.png logo-wordmark.png logo-wordmark-dark.png logo-square.png
+          git add favicon.ico favicon-32x32.png favicon-192x192.png favicon-512x512.png apple-touch-icon.png
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build(brand): sync PNG and favicon exports with SVG masters'
+            git push
+          fi

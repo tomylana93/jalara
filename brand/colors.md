@@ -1,27 +1,15 @@
-# Jalara Color System — Identity v2
+# Jalara Color System
 
-The official artwork uses flat colors (no gradients). All values are sRGB hex.
+The master artwork deliberately uses multiple restrained shades to create its signature diagonal highlights and curved modular depth. Do not replace its carefully authored SVG gradients with flat fills.
 
-## Logo colors
-
-| Token | Light logo | Dark logo | Role |
-| --- | --- | --- | --- |
-| `--jalara-blue` | `#2785F7` | `#4B9DFF` | Upper foundation module |
-| `--jalara-ink` | `#182A43` | `#90ABC9` | Lower-left module |
-| `--jalara-sky` | `#7EBBF7` | `#B5DBFF` | Lower-right module |
-| `--jalara-wordmark` | `#182A43` | `#F6FAFF` | Wordmark outlines |
-
-## Suggested application surfaces
-
-| Token | Hex | Meaning |
+| Purpose | Light mode | Dark mode |
 | --- | --- | --- |
-| `--surface-light` | `#FFFFFF` | Light artwork backdrop |
-| `--surface-dark` | `#111F34` | Dark artwork backdrop |
-| `--text-light` | `#182A43` | Body text on light backgrounds |
-| `--text-dark` | `#F6FAFF` | Body text on dark backgrounds |
+| Upper blue | `#228DFF` → `#096CE6` | `#298BFF` → `#1974ED` |
+| Left navy | `#2B425E` → `#192A40` | `#314762` → `#1F324B` |
+| Lower blue | `#E1F2FF` → `#83B9F6` | `#DBEDFF` → `#8BC5FF` |
+| Wordmark | `#18283F` | `#F5F9FF` |
+| Suggested surface | `#FFFFFF` | `#121F32` |
 
-These application surface suggestions are not a mandate to recolor independently branded applications built using the foundation.
+The white seam is an intrinsic part of the symbol's diagonal composition. The left navy segment intentionally becomes more subdued on dark surfaces but remains visibly separate from the background.
 
-## Accessibility
-
-Contrast-check text and UI components against their actual surfaces (WCAG AA: 4.5:1 for ordinary text and 3:1 for large text/essential graphical controls). The light-blue module is **decorative**, not a recommended body text color. Never encode a system status by color alone. Do not mix parts from light and dark logo sets.
+**Accessibility:** Use the wordmark colors against their corresponding suggested backgrounds. The pale blues are decorative fills, not body-text colors. Essential UI controls require adequate contrast independent of the logo.
