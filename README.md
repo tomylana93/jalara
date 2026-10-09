@@ -23,6 +23,10 @@ The artwork contains **no tagline or description**. Jalara has a rounded modular
 
 All four PNG logo assets have transparent backgrounds. Use the corresponding light/dark variant rather than CSS filters.
 
+## Wordmark typography
+
+The `jalara` wordmark is **custom geometric vector lettering**, not a typeset font. It is made of SVG paths and circles; **Inter is recommended for surrounding interface text but is not the font used to create the logo**. Always use the official SVG/PNG wordmark instead of recreating it with a font. See [Typography](brand/typography.md) for the full specification.
+
 ## Automatic dark and light support in GitHub README
 
 The top-of-page logo uses an HTML `<picture>` element with `prefers-color-scheme`, so GitHub can select the matching SVG automatically based on the reader's theme settings. A regular `<img>` is provided as the fallback.
