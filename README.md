@@ -1,107 +1,46 @@
 # Jalara Brand Assets
 
-This repository contains the official visual identity assets for **Jalara**, a modular application foundation designed to be flexible, modern, and organized.
+**Jalara** is a modern, modular foundation for building simple, purposeful applications.
 
-> **Jalara — One foundation, many possibilities.**
+This repository contains the official Jalara visual identity. All logo variants are free of taglines or descriptive text. The master artwork is SVG and uses only vector paths: no embedded fonts, external images, or gradients.
 
-## Brand Philosophy
+## Logo variants
 
-The name **Jalara** represents interconnected parts working in harmony within a single system. This philosophy aligns with a modular monolith approach: each module has a clear responsibility while remaining part of one consistent application foundation.
+| Asset | Composition | Background | Use |
+| --- | --- | --- | --- |
+| [`logo.svg`](logo.svg) | Symbol only | Light | Default app icon and compact navigation |
+| [`logo-dark.svg`](logo-dark.svg) | Symbol only | Dark | Dark-mode app icon |
+| [`logo-wordmark.svg`](logo-wordmark.svg) | Symbol + `jalara` | Light | README, website headers, documentation |
+| [`logo-wordmark-dark.svg`](logo-wordmark-dark.svg) | Symbol + `jalara` | Dark | Dark-mode headers and documents |
 
-Jalara is built around four principles:
+Use the light/dark variants with the matching background. The wordmark is outlined rather than rendered using an installed font.
 
-- **Modular** — each capability can be developed as a focused and independent part of the system.
-- **Flexible** — the platform can adapt to different product and business requirements.
-- **Modern** — the technology and user experience are designed to remain relevant and efficient.
-- **Organized** — clear structure, consistency, and responsibility boundaries guide development.
+## Other assets
 
-## Asset Structure
+| Asset | Purpose |
+| --- | --- |
+| `favicon.svg`, `favicon.ico` | Browser favicons |
+| `favicon-32x32.png` | Legacy 32px favicon |
+| `favicon-192x192.png`, `favicon-512x512.png` | PWA manifest icons |
+| `apple-touch-icon.png` | Apple home-screen icon |
+| `logo.png`, `logo-dark.png` | Raster symbol exports |
+| `logo-wordmark.png`, `logo-wordmark-dark.png` | Raster wordmark exports |
+| `logo-square.png` | Square avatar/presentation icon |
+| `site.webmanifest` | Web app metadata |
 
-```text
-.
-├── README.md
-├── LICENSE.md
-├── brand/
-│   ├── brand-guidelines.md
-│   ├── colors.md
-│   └── typography.md
-├── favicon.svg
-├── favicon-32x32.png
-├── favicon-192x192.png
-├── favicon-512x512.png
-├── site.webmanifest
-├── favicon.ico
-├── logo.png
-├── logo.svg
-├── logo-dark.png
-├── logo-dark.svg
-└── logo-square.png
-```
+Prefer the SVG variants wherever supported. Transparent PNG exports are for tools that cannot display SVG.
 
-## Asset Index
+## Integration with JVST
 
-| File | Intended use |
-|---|---|
-| `logo.svg` | Primary logo for light backgrounds. Preferred for websites and digital interfaces. |
-| `logo.png` | Transparent raster version of the primary logo. |
-| `logo-dark.svg` | Logo variant for dark backgrounds. |
-| `logo-dark.png` | Transparent raster version of the dark-mode logo. |
-| `logo-square.png` | Square composition for profiles, social media, and promotional material. |
-| `favicon.svg` | Scalable browser favicon. Preferred by modern browsers. |
-| `favicon.ico` | Broadly compatible browser favicon. |
-| `favicon-32x32.png` | Standard small favicon. |
-| `favicon-192x192.png` | Web application and Android icon. |
-| `favicon-512x512.png` | High-resolution icon for PWAs and digital distribution. |
-| `site.webmanifest` | Web application identity and icon metadata. |
+The [JVST foundation](https://github.com/tomylana93/jvst) intentionally renders a compact icon and the configured application name separately. Retain that separation: map `logo.svg` and `logo-dark.svg` to the matching files in `jvst/public/` and use the wordmark files only for brand-facing material. Do not insert the wordmark inside `AppLogoIcon.vue` or it will render at icon size.
 
-## Quick Usage
+See [`brand/jvst-integration.md`](brand/jvst-integration.md) for the complete integration checklist. The JVST application also supports an app-specific custom logo through Brand Settings: its logo upload must continue to take precedence over default Jalara artwork.
 
-### HTML
+## Visual identity documentation
 
-```html
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="/favicon-192x192.png">
-<link rel="manifest" href="/site.webmanifest">
-```
+- [Logo and usage guidelines](brand/brand-guidelines.md)
+- [Colors](brand/colors.md)
+- [Typography](brand/typography.md)
+- [License](LICENSE.md)
 
-### Vue
-
-```vue
-<img
-    src="/brand/logo.svg"
-    alt="Jalara"
-    class="h-10 w-auto"
->
-```
-
-Use `logo-dark.svg` on dark surfaces. Do not invert the primary logo with CSS filters because the result will not match the official dark-mode variant.
-
-## Basic Rules
-
-- Prefer SVG for digital use.
-- Use the logo variant with the clearest contrast against its background.
-- Preserve the original aspect ratio and surrounding clear space.
-- Do not alter the logo's colors, shapes, gradients, proportions, or orientation.
-- Do not add shadows, outlines, glow, bevels, or textures.
-- Do not place the logo over visually busy or low-contrast backgrounds.
-
-Full documentation:
-
-- [`brand/brand-guidelines.md`](brand/brand-guidelines.md)
-- [`brand/colors.md`](brand/colors.md)
-- [`brand/typography.md`](brand/typography.md)
-- [`LICENSE.md`](LICENSE.md)
-
-## Brand Permission
-
-For trademark, partnership, commercial usage, or brand permission requests, contact the Jalara brand owner through [@tomylana93](https://github.com/tomylana93).
-
-## License and Usage
-
-All Jalara names, logos, icons, and visual identity elements remain the property of the brand owner. Use outside official Jalara projects requires written permission.
-
-Code examples in this repository may be used for Jalara asset integration.
-
-See [`LICENSE.md`](LICENSE.md) for the full terms.
+Jalara is the brand; JVST is the repository where the foundation currently runs. Derived applications may have their own distinct brand identity.
