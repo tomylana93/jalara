@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="logo-wordmark-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="logo-wordmark.svg">
+    <img src="logo-wordmark.svg" alt="Jalara" width="382">
+  </picture>
+</p>
+
 # Jalara Brand Assets
 
 **Jalara** is a modern, modular foundation for building simple, purposeful applications.
