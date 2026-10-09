@@ -23,12 +23,17 @@ Use the light/dark variants with the matching background. The wordmark is outlin
 | `favicon-32x32.png` | Legacy 32px favicon |
 | `favicon-192x192.png`, `favicon-512x512.png` | PWA manifest icons |
 | `apple-touch-icon.png` | Apple home-screen icon |
-| `logo.png`, `logo-dark.png` | Raster symbol exports |
-| `logo-wordmark.png`, `logo-wordmark-dark.png` | Raster wordmark exports |
-| `logo-square.png` | Square avatar/presentation icon |
+| `logo.png` | 512px transparent raster of the light symbol |
 | `site.webmanifest` | Web app metadata |
 
-Prefer the SVG variants wherever supported. Transparent PNG exports are for tools that cannot display SVG.
+Prefer SVG wherever supported. Additional PNG variants (`logo-dark.png`, `logo-wordmark.png`, `logo-wordmark-dark.png` and `logo-square.png`) can be generated locally using:
+
+```bash
+python -m pip install -r scripts/requirements.txt
+python scripts/export-raster.py
+```
+
+The raster exports are derived from the canonical committed SVG artwork; no font files or raster source masters are required. The generated filenames are compatible with usage in JVST.
 
 ## Integration with JVST
 
